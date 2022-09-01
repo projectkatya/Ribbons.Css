@@ -1,0 +1,15 @@
+.header {
+    position: fixed;
+    .blue {
+        color: blue;
+    }
+}
+
+/* border radius */
+@for $i from 1 to 10 {
+    .border-radius-px-#{$i} {
+        border-radius: "#{$i}px";
+    }
+}
+
+/* padding */
