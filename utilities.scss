@@ -1,10 +1,3 @@
-.header {
-    position: fixed;
-    .blue {
-        color: blue;
-    }
-}
-
 /* border radius */
 @for $i from 1 to 10 {
     .border-radius-px-#{$i} {
@@ -13,3 +6,62 @@
 }
 
 /* padding */
+@for $i from 1 to 21 {
+    $interval: 0.25;
+    .padding-rem-#{$i} {
+        padding : "#{$i * $interval}rem"
+    }
+    .padding-t-rem-#{$i} {
+        padding-top : "#{$i * $interval}rem"
+    }
+    .padding-r-rem-#{$i} {
+        padding-right : "#{$i * $interval}rem"
+    }
+    .padding-b-rem-#{$i} {
+        padding-bottom : "#{$i * $interval}rem"
+    }
+    .padding-l-rem-#{$i} {
+        padding-left : "#{$i * $interval}rem"
+    }
+    .padding-x-rem-#{$i} {
+        padding-left : "#{$i * $interval}rem";
+        padding-right : "#{$i * $interval}rem"
+    }
+    .padding-y-rem-#{$i} {
+        padding-top : "#{$i * $interval}rem";
+        padding-bottom : "#{$i * $interval}rem"
+    }
+}
+
+@for $i from 1 to 21 {
+    $interval: 0.25;
+    .margin-rem-#{$i} {
+        margin : "#{$i * $interval}rem"
+    }
+    .margin-t-rem-#{$i} {
+        margin-top : "#{$i * $interval}rem"
+    }
+    .margin-r-rem-#{$i} {
+        margin-right : "#{$i * $interval}rem"
+    }
+    .margin-b-rem-#{$i} {
+        margin-bottom : "#{$i * $interval}rem"
+    }
+    .margin-l-rem-#{$i} {
+        margin-left : "#{$i * $interval}rem"
+    }
+    .margin-x-rem-#{$i} {
+        margin-left : "#{$i * $interval}rem";
+        margin-right : "#{$i * $interval}rem"
+    }
+    .margin-y-rem-#{$i} {
+        margin-top : "#{$i * $interval}rem";
+        margin-bottom : "#{$i * $interval}rem"
+    }
+}
+
+@for $i from 10 to 50 {
+    .font-size-px-#{$i} {
+        font-size : "#{$i}px"
+    }
+}
