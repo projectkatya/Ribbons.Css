@@ -1,0 +1,88 @@
+$breakPoints: (
+    "": 0px,
+    "-sm": 576px,
+    "-md": 768px,
+    "-lg": 992px,
+    "-xl": 1200px,
+    "-xxl": 1400px
+);
+
+$positions: (
+    "", "-t", "-r", "-b", "-l", "-x", "-y"
+);
+
+@mixin breakpoint($size, $minWidth) {
+    @media screen and (min-width: $minWidth) {
+        @content;
+    }
+}
+
+@mixin margin-rem($size) {
+    @for $i from 1 to 11 {
+        $margin: $i * 0.25;
+        @each $position in $positions {
+            .margin#{$position}#{$size}-rem-#{$i} {
+                @if $position == "" {
+                    margin: #{$margin}rem;
+                } @else if $position == "-t" {
+                    margin-top: #{$margin}rem;
+                } @else if $position == "-r" {
+                    margin-right: #{$margin}rem;
+                } @else if $position == "-b" {
+                    margin-bottom: #{$margin}rem;
+                } @else if $position == "-l" {
+                    margin-left: #{$margin}rem;
+                } @else if $position == "-x" {
+                    margin-left: #{$margin}rem;
+                    margin-right: #{$margin}rem;
+                } @else if $position == "-y" {
+                    margin-top: #{$margin}rem;
+                    margin-bottom: #{$margin}rem;
+                }
+            }
+        }
+    }
+};
+
+@mixin padding-rem($size) {
+    @for $i from 1 to 11 {
+        $padding: $i * 0.25;
+        @each $position in $positions {
+            .padding#{$position}#{$size}-rem-#{$i} {
+                @if $position == "" {
+                    padding: #{$padding}rem;
+                } @else if $position == "-t" {
+                    padding-top: #{$padding}rem;
+                } @else if $position == "-r" {
+                    padding-right: #{$padding}rem;
+                } @else if $position == "-b" {
+                    padding-bottom: #{$padding}rem;
+                } @else if $position == "-l" {
+                    padding-left: #{$padding}rem;
+                } @else if $position == "-x" {
+                    padding-left: #{$padding}rem;
+                    padding-right: #{$padding}rem;
+                } @else if $position == "-y" {
+                    padding-top: #{$padding}rem;
+                    padding-bottom: #{$padding}rem;
+                }
+            }
+        }
+    }
+};
+
+@mixin font-size-px($size) {
+    @for $i from 10 to 50 {
+        .font-size#{$size}-px-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+}
+
+@each $size, $minWidth in $breakPoints {
+    @include breakpoint($size, $minWidth) {
+        @include margin-rem($size);
+        @include padding-rem($size);
+        @include font-size-px($size);
+    }
+}

@@ -1,0 +1,61 @@
+@use "../fonts/fonts.scss" as fonts;
+
+$headerConfig: (
+    "height": 70px,
+    "background-color": #ffffff,
+    "border-bottom": 1px solid #dee2e6
+);
+$sidebarConfig: (
+    "height": calc(100% - map-get($headerConfig, "height")),
+    "width": 100%,
+    "max-width": 200px,
+    "padding-top": 0.5rem,
+    "padding-bottom": 0.5rem,
+    "border-right": 1px solid #dee2e6
+);
+
+body {
+    margin: 0;
+    font-family: Roboto-Regular, sans-serif;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: map-get($headerConfig, "height");
+    background-color: map-get($headerConfig, "background-color");
+    border-bottom: map-get($headerConfig, "border-bottom");
+}
+
+.sidebar {
+    position: fixed;
+    top: map-get($headerConfig, "height");
+    left: 0;
+    height: map-get($sidebarConfig, "height");
+    width: map-get($sidebarConfig, "width");
+    max-width: map-get($sidebarConfig, "max-width");
+    padding-top: map-get($sidebarConfig, "padding-top");
+    padding-bottom: map-get($sidebarConfig, "padding-bottom");
+    border-right: map-get($sidebarConfig, "border-right");
+    .sidebar-item {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        font-size: 15px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        span {
+            display: block;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
