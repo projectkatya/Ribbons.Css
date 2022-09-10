@@ -1,0 +1,33 @@
+$openSans: (
+    "Bold", "BoldItalic", "ExtraBold", "ExtraBoldItalic", "Italic", "Light", "LightItalic", "Medium",
+    "MediumItalic", "Regular", "SemiBold", "SemiBoldItalic"
+);
+
+$raleway: (
+    "Black", "BlackItalic", "Bold", "BoldItalic", "ExtraBold", "ExtraBoldItalic",
+    "ExtraLight", "ExtraLightItalic",
+    "Italic", "Light", "LightItalic", "Medium", "MediumItalic",
+    "Regular", "SemiBold", "SemiBoldItalic", "Thin", "ThinItalic"
+);
+
+$roboto: (
+    "Black", "BlackItalic", "Bold", "BoldItalic", "Italic", "Light", "LightItalic", "Medium", "MediumItalic",
+    "Regular", "Thin", "ThinItalic"
+);
+
+@mixin font-face($fontName, $variants) {
+    @each $variant in $variants {
+        @font-face {
+            font-family: #{$fontName}-#{$variant};
+            src: url(fonts/#{$fontName}/#{$fontName}-#{$variant}.ttf);
+        }
+
+        .font-#{to-lower-case($fontName)}-#{to-lower-case($variant)} {
+            font-family: #{$fontName}-#{$variant};
+        }
+    }
+}
+
+@include font-face("OpenSans", $openSans);
+@include font-face("Raleway", $raleway);
+@include font-face("Roboto", $roboto);

@@ -1,0 +1,335 @@
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(fonts/OpenSans/OpenSans-Bold.ttf);
+}
+.font-opensans-bold {
+  font-family: OpenSans-Bold;
+}
+
+@font-face {
+  font-family: OpenSans-BoldItalic;
+  src: url(fonts/OpenSans/OpenSans-BoldItalic.ttf);
+}
+.font-opensans-bolditalic {
+  font-family: OpenSans-BoldItalic;
+}
+
+@font-face {
+  font-family: OpenSans-ExtraBold;
+  src: url(fonts/OpenSans/OpenSans-ExtraBold.ttf);
+}
+.font-opensans-extrabold {
+  font-family: OpenSans-ExtraBold;
+}
+
+@font-face {
+  font-family: OpenSans-ExtraBoldItalic;
+  src: url(fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf);
+}
+.font-opensans-extrabolditalic {
+  font-family: OpenSans-ExtraBoldItalic;
+}
+
+@font-face {
+  font-family: OpenSans-Italic;
+  src: url(fonts/OpenSans/OpenSans-Italic.ttf);
+}
+.font-opensans-italic {
+  font-family: OpenSans-Italic;
+}
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url(fonts/OpenSans/OpenSans-Light.ttf);
+}
+.font-opensans-light {
+  font-family: OpenSans-Light;
+}
+
+@font-face {
+  font-family: OpenSans-LightItalic;
+  src: url(fonts/OpenSans/OpenSans-LightItalic.ttf);
+}
+.font-opensans-lightitalic {
+  font-family: OpenSans-LightItalic;
+}
+
+@font-face {
+  font-family: OpenSans-Medium;
+  src: url(fonts/OpenSans/OpenSans-Medium.ttf);
+}
+.font-opensans-medium {
+  font-family: OpenSans-Medium;
+}
+
+@font-face {
+  font-family: OpenSans-MediumItalic;
+  src: url(fonts/OpenSans/OpenSans-MediumItalic.ttf);
+}
+.font-opensans-mediumitalic {
+  font-family: OpenSans-MediumItalic;
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(fonts/OpenSans/OpenSans-Regular.ttf);
+}
+.font-opensans-regular {
+  font-family: OpenSans-Regular;
+}
+
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url(fonts/OpenSans/OpenSans-SemiBold.ttf);
+}
+.font-opensans-semibold {
+  font-family: OpenSans-SemiBold;
+}
+
+@font-face {
+  font-family: OpenSans-SemiBoldItalic;
+  src: url(fonts/OpenSans/OpenSans-SemiBoldItalic.ttf);
+}
+.font-opensans-semibolditalic {
+  font-family: OpenSans-SemiBoldItalic;
+}
+
+@font-face {
+  font-family: Raleway-Black;
+  src: url(fonts/Raleway/Raleway-Black.ttf);
+}
+.font-raleway-black {
+  font-family: Raleway-Black;
+}
+
+@font-face {
+  font-family: Raleway-BlackItalic;
+  src: url(fonts/Raleway/Raleway-BlackItalic.ttf);
+}
+.font-raleway-blackitalic {
+  font-family: Raleway-BlackItalic;
+}
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(fonts/Raleway/Raleway-Bold.ttf);
+}
+.font-raleway-bold {
+  font-family: Raleway-Bold;
+}
+
+@font-face {
+  font-family: Raleway-BoldItalic;
+  src: url(fonts/Raleway/Raleway-BoldItalic.ttf);
+}
+.font-raleway-bolditalic {
+  font-family: Raleway-BoldItalic;
+}
+
+@font-face {
+  font-family: Raleway-ExtraBold;
+  src: url(fonts/Raleway/Raleway-ExtraBold.ttf);
+}
+.font-raleway-extrabold {
+  font-family: Raleway-ExtraBold;
+}
+
+@font-face {
+  font-family: Raleway-ExtraBoldItalic;
+  src: url(fonts/Raleway/Raleway-ExtraBoldItalic.ttf);
+}
+.font-raleway-extrabolditalic {
+  font-family: Raleway-ExtraBoldItalic;
+}
+
+@font-face {
+  font-family: Raleway-ExtraLight;
+  src: url(fonts/Raleway/Raleway-ExtraLight.ttf);
+}
+.font-raleway-extralight {
+  font-family: Raleway-ExtraLight;
+}
+
+@font-face {
+  font-family: Raleway-ExtraLightItalic;
+  src: url(fonts/Raleway/Raleway-ExtraLightItalic.ttf);
+}
+.font-raleway-extralightitalic {
+  font-family: Raleway-ExtraLightItalic;
+}
+
+@font-face {
+  font-family: Raleway-Italic;
+  src: url(fonts/Raleway/Raleway-Italic.ttf);
+}
+.font-raleway-italic {
+  font-family: Raleway-Italic;
+}
+
+@font-face {
+  font-family: Raleway-Light;
+  src: url(fonts/Raleway/Raleway-Light.ttf);
+}
+.font-raleway-light {
+  font-family: Raleway-Light;
+}
+
+@font-face {
+  font-family: Raleway-LightItalic;
+  src: url(fonts/Raleway/Raleway-LightItalic.ttf);
+}
+.font-raleway-lightitalic {
+  font-family: Raleway-LightItalic;
+}
+
+@font-face {
+  font-family: Raleway-Medium;
+  src: url(fonts/Raleway/Raleway-Medium.ttf);
+}
+.font-raleway-medium {
+  font-family: Raleway-Medium;
+}
+
+@font-face {
+  font-family: Raleway-MediumItalic;
+  src: url(fonts/Raleway/Raleway-MediumItalic.ttf);
+}
+.font-raleway-mediumitalic {
+  font-family: Raleway-MediumItalic;
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(fonts/Raleway/Raleway-Regular.ttf);
+}
+.font-raleway-regular {
+  font-family: Raleway-Regular;
+}
+
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url(fonts/Raleway/Raleway-SemiBold.ttf);
+}
+.font-raleway-semibold {
+  font-family: Raleway-SemiBold;
+}
+
+@font-face {
+  font-family: Raleway-SemiBoldItalic;
+  src: url(fonts/Raleway/Raleway-SemiBoldItalic.ttf);
+}
+.font-raleway-semibolditalic {
+  font-family: Raleway-SemiBoldItalic;
+}
+
+@font-face {
+  font-family: Raleway-Thin;
+  src: url(fonts/Raleway/Raleway-Thin.ttf);
+}
+.font-raleway-thin {
+  font-family: Raleway-Thin;
+}
+
+@font-face {
+  font-family: Raleway-ThinItalic;
+  src: url(fonts/Raleway/Raleway-ThinItalic.ttf);
+}
+.font-raleway-thinitalic {
+  font-family: Raleway-ThinItalic;
+}
+
+@font-face {
+  font-family: Roboto-Black;
+  src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+.font-roboto-black {
+  font-family: Roboto-Black;
+}
+
+@font-face {
+  font-family: Roboto-BlackItalic;
+  src: url(fonts/Roboto/Roboto-BlackItalic.ttf);
+}
+.font-roboto-blackitalic {
+  font-family: Roboto-BlackItalic;
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(fonts/Roboto/Roboto-Bold.ttf);
+}
+.font-roboto-bold {
+  font-family: Roboto-Bold;
+}
+
+@font-face {
+  font-family: Roboto-BoldItalic;
+  src: url(fonts/Roboto/Roboto-BoldItalic.ttf);
+}
+.font-roboto-bolditalic {
+  font-family: Roboto-BoldItalic;
+}
+
+@font-face {
+  font-family: Roboto-Italic;
+  src: url(fonts/Roboto/Roboto-Italic.ttf);
+}
+.font-roboto-italic {
+  font-family: Roboto-Italic;
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(fonts/Roboto/Roboto-Light.ttf);
+}
+.font-roboto-light {
+  font-family: Roboto-Light;
+}
+
+@font-face {
+  font-family: Roboto-LightItalic;
+  src: url(fonts/Roboto/Roboto-LightItalic.ttf);
+}
+.font-roboto-lightitalic {
+  font-family: Roboto-LightItalic;
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(fonts/Roboto/Roboto-Medium.ttf);
+}
+.font-roboto-medium {
+  font-family: Roboto-Medium;
+}
+
+@font-face {
+  font-family: Roboto-MediumItalic;
+  src: url(fonts/Roboto/Roboto-MediumItalic.ttf);
+}
+.font-roboto-mediumitalic {
+  font-family: Roboto-MediumItalic;
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+.font-roboto-regular {
+  font-family: Roboto-Regular;
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(fonts/Roboto/Roboto-Thin.ttf);
+}
+.font-roboto-thin {
+  font-family: Roboto-Thin;
+}
+
+@font-face {
+  font-family: Roboto-ThinItalic;
+  src: url(fonts/Roboto/Roboto-ThinItalic.ttf);
+}
+.font-roboto-thinitalic {
+  font-family: Roboto-ThinItalic;
+}/*# sourceMappingURL=fonts.css.map */

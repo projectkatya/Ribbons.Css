@@ -11,6 +11,12 @@ $positions: (
     "", "-t", "-r", "-b", "-l", "-x", "-y"
 );
 
+$corners: (
+    "", "-tr", "-br", "-bl", "-tl"
+);
+
+$borderColor: #dee2e6;
+
 @mixin breakpoint($size, $minWidth) {
     @media screen and (min-width: $minWidth) {
         @content;
@@ -71,6 +77,54 @@ $positions: (
     }
 };
 
+@mixin border($size) {
+    @each $position in $positions {
+        .border#{$position}#{$size}-0 {
+            border: none;
+        }
+
+        .border#{$position}#{$size}-1 {
+            @if $position == "" {
+                border: 1px solid #{$borderColor};
+            } @else if $position == "-t" {
+                border-top: 1px solid #{$borderColor};
+            } @else if $position == "-r" {
+                border-right: 1px solid #{$borderColor};
+            } @else if $position == "-b" {
+                border-bottom: 1px solid #{$borderColor};
+            } @else if $position == "-l" {
+                border-left: 1px solid #{$borderColor};
+            } @else if $position == "-x" {
+                border-left: 1px solid #{$borderColor};
+                border-right: 1px solid #{$borderColor};
+            } @else if $position == "-y" {
+                border-top: 1px solid #{$borderColor};
+                border-bottom: 1px solid #{$borderColor};
+            }
+        }
+    }
+}
+
+@mixin border-radius-px($size) {
+    @for $i from 0 to 11 {
+        @each $corner in $corners {
+            .border-radius#{$corner}#{$size}-px-#{$i} {
+                @if $corner == "" {
+                    border-radius: #{$i}px;
+                } @else if $corner == "-tr" {
+                    border-top-right-radius: #{$i}px;
+                } @else if $corner == "-br" {
+                    border-bottom-right-radius: #{$i}px;
+                } @else if $corner == "-bl" {
+                    border-bottom-left-radius: #{$i}px;
+                } @else if $corner == "-tl" {
+                    border-top-left-radius: #{$i}px;
+                }
+            }
+        }
+    }
+}
+
 @mixin font-size-px($size) {
     @for $i from 10 to 50 {
         .font-size#{$size}-px-#{$i} {
@@ -84,5 +138,7 @@ $positions: (
         @include margin-rem($size);
         @include padding-rem($size);
         @include font-size-px($size);
+        @include border($size);
+        @include border-radius-px($size);
     }
 }
