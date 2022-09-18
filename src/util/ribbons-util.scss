@@ -133,6 +133,17 @@ $borderColor: #dee2e6;
     }
 }
 
+@mixin wrapper-px($size) {
+    @for $i from 6 to 21 {
+        $wrapperSize: $i * 50;
+        .wrapper#{$size}-px-#{$wrapperSize} {
+            margin: auto;
+            width: 100%;
+            max-width: #{$wrapperSize}px;
+        }
+    }
+}
+
 @each $size, $minWidth in $breakPoints {
     @include breakpoint($size, $minWidth) {
         @include margin-rem($size);
@@ -140,5 +151,6 @@ $borderColor: #dee2e6;
         @include font-size-px($size);
         @include border($size);
         @include border-radius-px($size);
+        @include wrapper-px($size);
     }
 }
